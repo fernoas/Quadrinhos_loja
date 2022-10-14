@@ -1,4 +1,5 @@
 from src.app import app
+from src.controllers.controller import *
 
 
 HOST = 'localhost'
