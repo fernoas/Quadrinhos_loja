@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS produtos(
     PRIMARY KEY('code')
 );
 
-CREATE TABLE IF NOT EXISTS produtos(
+CREATE TABLE IF NOT EXISTS categorias(
     id TINYINT not NULL,
     name CHAR(40) NOT NULL,
     description VARCHAR(200),

@@ -1,0 +1,62 @@
+#titulo{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 2%;
+    }
+
+#conteudo{
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, button{
+    border-radius: 4px;
+}
+
+
+.campo{
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: inline-block;
+}
+
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="password"]{
+    padding: 0.2em;
+    border: 1px solid;
+    display: block;
+}
+
+.campo input:focus{
+    background: #e0e0f8;
+}
+
+.botao{
+    /*background-color:  rgb(2, 71, 2);
+    color: white;
+    font-size: 1.2em;
+    border: 0.1;
+    margin-bottom: 1em;
+    padding: 0.1em 0.6em;
+    position: absolute;
+    left: 50%;*/
+    width: 37%;
+    height: 30px;
+    cursor: pointer;
+    background:  rgb(2, 71, 2);
+    color: white;
+    border: 0;
+}
+
+.botao:hover{
+    background: rgb(3, 0, 0);
+}
+
+#senha{
+    display: block;
+}

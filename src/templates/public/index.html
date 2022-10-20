@@ -1,0 +1,24 @@
+{%  extends "base.html" %}
+
+
+{% block content %}
+
+<form action="/" method="post">
+    <input type="number" name="code" placeholder="código produto">
+    <input type="text" name="name" placeholder="nome produto">
+    <input type="number" name="stock" placeholder="disponibilidade">
+    <input type="number" name="value" placeholder="valor produto">
+    <input type="text" name="category" placeholder="produto categoria">
+
+    <button type="submit">Cadastrar</button>
+    
+</form>
+
+{% for produto in data %}
+    {{produto.0}}
+    <br>
+    {{produto.1}}
+
+{% endfor %}
+
+{% endblock %}
