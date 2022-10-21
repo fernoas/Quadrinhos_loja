@@ -1,3 +1,4 @@
+from turtle import clear
 from flask.views import MethodView
 from flask import request, render_template, redirect
 from pymysql import MySQLError
@@ -41,5 +42,53 @@ class UpdateProdutoController(MethodView):
         with mysql.cursor() as cur:
             pass
         return "deletado com sucesso"
+
+
+
+
+class ProdutosController(MethodView):
+    def get(self):
+        pass
+#      with mysql.cursor() as cur:
+ #           cur.execute("SELECT * FROM produto")
+#            data = cur.fetchall
+        return render_template('public/produtos.html')
+
+
+class ClientesController(MethodView):
+    def get(self):
+        pass
+#      with mysql.cursor() as cur:
+ #           cur.execute("SELECT * FROM produto")
+#            data = cur.fetchall
+        return render_template('public/clientes.html')
+
+
+class EditorasController(MethodView):
+    def get(self):
+        pass
+#      with mysql.cursor() as cur:
+ #           cur.execute("SELECT * FROM produto")
+#            data = cur.fetchall
+        return render_template('public/editoras.html')
+
+
+class LoginController(MethodView):
+    def get(self):
+        pass
+#      with mysql.cursor() as cur:
+ #           cur.execute("SELECT * FROM produto")
+#            data = cur.fetchall
+        return render_template('public/login.html')
+
+
+
+class CarrinhoController(MethodView):
+    def get(self):
+        pass
+#      with mysql.cursor() as cur:
+ #           cur.execute("SELECT * FROM produto")
+#            data = cur.fetchall
+        return render_template('public/carrinho.html')
 
         
