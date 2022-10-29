@@ -1,11 +1,12 @@
-from turtle import clear
 from flask import Flask
 from src.routes.routes import *
 
 
 app = Flask(__name__)
 
-app.add_url_rule(routes["index_route"], view_func=routes["indexcontroller"])
+app.secret_key = '56740367'
+
+app.add_url_rule(routes["insert_route"], view_func=routes["insertcontroller"])
 
 app.add_url_rule(routes["produtos_route"], view_func=routes["produtoscontroller"])
 
